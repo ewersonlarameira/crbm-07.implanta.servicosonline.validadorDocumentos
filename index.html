@@ -3,41 +3,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Protótipo educacional de uma interface de validação documental. Sem validade oficial.">
-  <title>Verifica Demo — Validação documental fictícia</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='25' fill='%23126b55'/%3E%3Cpath d='m19 33 8 8 18-20' fill='none' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <meta name="description" content="Protótipo demonstrativo de validação documental, sem validade oficial.">
+  <title>SERVIÇOS ONLINE — Demonstração</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='24' fill='%23f58220'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="result.css">
 </head>
 <body>
-  <aside class="disclaimer" role="note">AMBIENTE DEMONSTRATIVO — SEM VÍNCULO COM CONSELHOS PROFISSIONAIS E SEM VALIDADE OFICIAL</aside>
+  <div class="demo-banner" role="note">AMBIENTE DEMONSTRATIVO — SEM VALIDADE OFICIAL E SEM VÍNCULO COM O CRBM</div>
   <header class="site-header">
-    <a class="brand" href="#" aria-label="Início do Verifica Demo"><span class="brand-mark" aria-hidden="true">VD</span><span><strong>Verifica Demo</strong><small>Laboratório de interfaces</small></span></a>
+    <a class="brand" href="#" aria-label="Página inicial da demonstração">
+      <span class="brand-symbol">V</span>
+      <span class="brand-copy"><strong>verifica</strong><b>demo</b><small>INTERFACE EDUCACIONAL</small></span>
+    </a>
     <nav aria-label="Menu principal">
-      <a class="active" href="#validar">Validar exemplo</a>
+      <a class="active" href="#validar">Validar Documentos</a>
       <a href="#orientacoes">Orientações</a>
-      <a href="#sobre">Sobre o protótipo</a>
-      <a class="official-link" href="https://crbm-01.implanta.net.br/servicosOnline/Publico/ValidarDocumentos/" target="_blank" rel="noopener noreferrer">Acessar portal oficial ↗</a>
+      <a href="#sobre">Sobre</a>
+      <a href="https://crbm-01.implanta.net.br/servicosOnline/Publico/ValidarDocumentos/" target="_blank" rel="noopener noreferrer">Portal oficial ↗</a>
     </nav>
   </header>
+
   <main id="validar">
-    <section class="hero"><div class="title-icon" aria-hidden="true">✓</div><div><span class="eyebrow">PROTÓTIPO EDUCACIONAL</span><h1>Validar documento de exemplo</h1></div></section>
-    <section class="content" aria-labelledby="consulta-title">
-      <p id="consulta-title" class="intro">Teste a interface usando um código fictício. Nenhuma consulta é feita em bases externas.</p>
-      <div class="demo-code"><span>CÓDIGO PARA TESTE</span><button id="copyDemo" type="button">DEMO-2026-VALIDO <b>Copiar</b></button></div>
-      <form id="validationForm" novalidate>
-        <label for="codigo">CÓDIGO DEMONSTRATIVO</label>
-        <div class="form-row"><input id="codigo" name="codigo" maxlength="40" placeholder="Digite DEMO-2026-VALIDO" aria-describedby="formHelp" required><button class="verify-button" type="submit">VERIFICAR</button></div>
-        <p id="formHelp" class="form-help">Este campo aceita somente o código fictício informado acima.</p>
-      </form>
-      <div class="verification" aria-label="Verificação local do protótipo"><span aria-hidden="true">✓</span><div><strong>Interface protegida</strong><small>Validação executada apenas neste navegador</small></div></div>
+    <div class="titlebar"><span class="title-icon" aria-hidden="true">✓</span><h1>Validar documentos</h1></div>
+    <section class="validation-area">
+      <p class="intro">Área demonstrativa para verificar, através de um <strong>código fictício</strong>, o funcionamento desta interface.</p>
+      <div class="query-row">
+        <form id="validationForm" novalidate>
+          <div class="field">
+            <label for="codigo">CÓDIGO DE AUTENTICAÇÃO DEMONSTRATIVO</label>
+            <input id="codigo" name="codigo" maxlength="40" placeholder="DEMO-2026-VALIDO" aria-describedby="formHelp" required>
+          </div>
+          <button class="verify-button" type="submit">VERIFICAR</button>
+        </form>
+        <div class="verification" aria-label="Verificação local concluída">
+          <span aria-hidden="true">✓</span><strong>Sucesso!</strong>
+          <div class="verification-brand"><b>DEMO</b><small>Privacidade · Ajuda</small></div>
+        </div>
+      </div>
+      <p id="formHelp" class="form-help">Use o código <button id="copyDemo" type="button">DEMO-2026-VALIDO <b>copiar</b></button></p>
       <div id="result" class="result-area" aria-live="polite"></div>
     </section>
-    <section id="orientacoes" class="info-section"><h2>Como validar um documento verdadeiro?</h2><p>Use sempre o endereço oficial informado pelo órgão emissor. Confira o domínio, o cadeado de segurança e os dados exibidos no próprio documento.</p><a href="https://crbm-01.implanta.net.br/servicosOnline/Publico/ValidarDocumentos/" target="_blank" rel="noopener noreferrer">Ir ao portal oficial do CRBM-1 ↗</a></section>
-    <section id="sobre" class="info-section compact"><h2>Sobre</h2><p>Este protótipo demonstra layout, acessibilidade e comportamento de uma tela de consulta. Os nomes, números e resultados apresentados são inteiramente fictícios.</p></section>
-    <div class="watermark" aria-hidden="true"><strong>VERIFICA</strong><span>DEMO</span></div>
+
+    <section id="orientacoes" class="support-section">
+      <h2>Validação verdadeira</h2>
+      <p>Para consultar documentos reais, utilize exclusivamente o endereço oficial fornecido pelo órgão emissor.</p>
+      <a href="https://crbm-01.implanta.net.br/servicosOnline/Publico/ValidarDocumentos/" target="_blank" rel="noopener noreferrer">ACESSAR PORTAL OFICIAL</a>
+    </section>
+    <section id="sobre" class="support-section"><h2>Sobre este protótipo</h2><p>Todos os códigos, documentos e resultados exibidos são fictícios e não comprovam registro, formação ou habilitação profissional.</p></section>
+    <div class="watermark" aria-hidden="true"><strong>verifica</strong><span>DEMO</span></div>
   </main>
-  <footer>Protótipo educacional • Nenhum dado possui validade jurídica ou profissional</footer>
+  <footer>AMBIENTE DEMONSTRATIVO — SEM VALIDADE JURÍDICA OU PROFISSIONAL</footer>
   <script src="app.js"></script>
 </body>
 </html>
