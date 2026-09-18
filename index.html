@@ -27,23 +27,26 @@
   <main id="validar">
     <div class="titlebar"><img class="title-icon-image" src="assets/crbm7-title-icon.svg" alt="" aria-hidden="true"><h1>Validar documentos</h1></div>
     <section class="validation-area">
-      <p class="intro">Área disponível para verificar, através do <strong>código de autenticidade</strong>, os documentos emitidos pelo conselho..</p>
+      <p class="intro">Área demonstrativa para testar a interface com um <strong>código fictício</strong>.</p>
       <div class="query-row">
         <form id="validationForm" novalidate>
           <div class="field">
-            <label for="codigo">CÓDIGO DE AUTENTICAÇÃO</label>
-            <input id="codigo" name="codigo" maxlength="40" placeholder=>
+            <label for="codigo">CÓDIGO DE AUTENTICAÇÃO DEMONSTRATIVO</label>
+            <input id="codigo" name="codigo" maxlength="40" placeholder="" aria-describedby="formHelp" autocomplete="off" required>
           </div>
           <button class="verify-button" type="submit">VERIFICAR</button>
         </form>
-        <div class="verification" aria-label="Verificação local concluída">
-          <span aria-hidden="true">✓</span><strong>Sucesso!</strong>
-          <div class="verification-brand"><b>CLOUDFLARE</b><small>Privacidade · Ajuda</small></div>
+        <div class="verification" aria-label="Verificação demonstrativa">
+          <span aria-hidden="true">✓</span><strong>Interface ativa</strong>
+          <div class="verification-brand"><b>DEMO</b><small>Verificação local</small></div>
         </div>
       </div>
+      <p id="formHelp" class="form-help">Use o código de demonstração <button id="copyDemo" type="button">616052cf-d84b-4e75-8158-e1837928f9db <b>copiar</b></button></p>
+      <div id="result" class="result-area" aria-live="polite"></div>
     </section>
+  </main>
 
-
+  <footer>AMBIENTE DEMONSTRATIVO — SEM VALIDADE JURÍDICA OU PROFISSIONAL</footer>
   <script src="app.js"></script>
 </body>
 </html>
