@@ -40,6 +40,6 @@ form.addEventListener('submit', event => {
     return;
   }
 
-  result.innerHTML = `<article class="document-card"><header class="result-banner"><span aria-hidden="true">✓</span><div><strong></strong><small></small></div><b class="demo-stamp"></b></header><div class="document-grid"><div class="data-item"><strong>CERTIDÃO DE REGULARIDADE - PESSOA FÍSICA</strong><span>TIPO DE DOCUMENTO</span></div><div class="data-item"><strong>30/09/2026 14:30</strong><span>DATA DO DOCUMENTO</span></div><div class="data-item"><strong>20685/2026</strong><span>Nº DOCUMENTO</span></div><div class="data-item"><strong>31/12/2026</strong><span>DATA VALIDADE</span></div><div class="data-item"><strong>CONSELHO REGIONAL DE BIOMEDICINA - 7ª REGIÃO</strong><span>CONSELHO EMISSOR</span></div></div><p class="fiction-note"></p></article>`;
+  result.innerHTML = `<article class="document-card"><div class="document-grid"><div class="data-item"><strong>CERTIDÃO DE REGULARIDADE - PESSOA FÍSICA</strong><span>TIPO DE DOCUMENTO</span></div><div class="data-item"><strong>30/09/2026 14:30</strong><span>DATA DO DOCUMENTO</span></div><div class="data-item"><strong>20685/2026</strong><span>Nº DOCUMENTO</span></div><div class="data-item"><strong>31/12/2026</strong><span>DATA VALIDADE</span></div><div class="data-item"><strong>CONSELHO REGIONAL DE BIOMEDICINA - 7ª REGIÃO</strong><span>CONSELHO EMISSOR</span></div></div><p class="fiction-note"></p></article>`;
   result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 });
