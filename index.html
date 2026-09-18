@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="validação documental, validade oficial.">
-  <title>SERVIÇOS ONLINE</title>
+  <meta name="description" content="Protótipo demonstrativo de validação documental, sem validade oficial.">
+  <title>SERVIÇOS ONLINE — Demonstração</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='24' fill='%23f58220'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="result.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#" aria-label="Página inicial">
+    <a class="brand" href="#" aria-label="Página inicial da demonstração">
       <img class="brand-logo" src="assets/crbm7-logo.svg" alt="CRBM7 — Conselho Regional de Biomedicina">
     </a>
     <nav aria-label="Menu principal">
@@ -32,6 +32,7 @@
         <form id="validationForm" novalidate>
           <div class="field">
             <label for="codigo">CÓDIGO DE AUTENTICAÇÃO</label>
+            <input id="codigo" name="codigo" maxlength="40" placeholder="616052cf-d84b-4e75-8158-e1837928f9db" aria-describedby="formHelp" required>
           </div>
           <button class="verify-button" type="submit">VERIFICAR</button>
         </form>
@@ -41,6 +42,16 @@
         </div>
       </div>
     </section>
+
+    <section id="orientacoes" class="support-section">
+      <h2>Validação verdadeira</h2>
+      <p>Para consultar documentos reais, utilize exclusivamente o endereço oficial fornecido pelo órgão emissor.</p>
+      <a href="https://crbm-07.implanta.net.br/servicosOnline/Publico/ValidarDocumentos/" target="_blank" rel="noopener noreferrer">ACESSAR PORTAL OFICIAL</a>
+    </section>
+    <section id="sobre" class="support-section"><h2>Sobre este protótipo</h2><p>Todos os códigos, documentos e resultados exibidos são fictícios e não comprovam registro, formação ou habilitação profissional.</p></section>
+    <div class="watermark" aria-hidden="true"><strong>verifica</strong><span>DEMO</span></div>
+  </main>
+  <footer>AMBIENTE DEMONSTRATIVO — SEM VALIDADE JURÍDICA OU PROFISSIONAL</footer>
   <script src="app.js"></script>
 </body>
 </html>
